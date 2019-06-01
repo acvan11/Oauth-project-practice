@@ -6,8 +6,9 @@ const port = process.env.PORT || 3000
 // setup view engine
 app.set('view engine', 'ejs');
 
+// create home route
 app.get('/', (req, res) => {
-	res.send('hello world');
+	res.render('home');
 })
 
 app.listen(port, () => {
